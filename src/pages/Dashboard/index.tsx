@@ -93,7 +93,7 @@ function Dashboard() {
 
   return (
     <>
-      <Header openModal={toggleModal} />
+      <Header toggleModal={toggleModal} />
 
       <ModalAddFood
         isOpen={modal}
