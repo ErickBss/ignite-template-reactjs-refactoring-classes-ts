@@ -19,7 +19,7 @@ function ModalAddFood({ isOpen, toggleModal, handleAddFood }: ModalAddFood) {
   }
 
   return (
-    <Modal isOpen={isOpen} setIsOpen={toggleModal}>
+    <Modal isOpen={isOpen} toggleModal={toggleModal}>
       <Form onSubmit={handleSubmit}>
         <h1>Novo Prato</h1>
         <Input name="image" placeholder="Cole o link qui" />

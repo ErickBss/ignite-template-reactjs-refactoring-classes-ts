@@ -26,7 +26,7 @@ function ModalEditFood({
   }
 
   return (
-    <Modal isOpen={isOpen} setIsOpen={toggleEditModal}>
+    <Modal isOpen={isOpen} toggleModal={toggleEditModal}>
       <Form onSubmit={handleSubmit} initialData={editingFood}>
         <h1>Editar Prato</h1>
         <Input name="image" placeholder="Cole o link aqui" />
