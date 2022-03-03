@@ -13,9 +13,9 @@ class ModalEditFood extends Component {
   }
 
   handleSubmit = async (data) => {
-    const { setIsOpen, handleUpdateFood } = this.props;
+    const { setIsOpen, handleUpdatedFood } = this.props;
 
-    handleUpdateFood(data);
+    handleUpdatedFood(data);
     setIsOpen();
   };
 
