@@ -40,7 +40,8 @@ const Input = ({ name, placeholder, ...rest }: inputProps) => {
       <input
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
-        defaultValue={defaultValue ? defaultValue : placeholder}
+        defaultValue={defaultValue}
+        placeholder={placeholder}
         ref={inputRef}
         {...rest}
       />
