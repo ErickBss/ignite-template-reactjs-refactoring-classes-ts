@@ -6,15 +6,8 @@ import Food from '../../components/Food'
 import ModalAddFood from '../../components/ModalAddFood'
 import ModalEditFood from '../../components/ModalEditFood'
 import { FoodsContainer } from './styles'
-import { AxiosResponse } from 'axios'
 
-type foodProps = {
-  id: number
-  image: string
-  name: string
-  price: number
-  description: string
-}
+import { foodProps } from '../../types'
 
 function Dashboard() {
   const [foods, setFoods] = useState<foodProps[]>([])
@@ -97,7 +90,7 @@ function Dashboard() {
 
       <ModalAddFood
         isOpen={modal}
-        setIsOpen={toggleModal}
+        toggleModal={toggleModal}
         handleAddFood={handleAddFood}
       />
 
