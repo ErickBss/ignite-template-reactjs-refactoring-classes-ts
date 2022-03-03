@@ -4,4 +4,5 @@ export type foodProps = {
   name: string
   price: number
   description: string
+  available: boolean
 }

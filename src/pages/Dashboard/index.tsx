@@ -19,6 +19,7 @@ function Dashboard() {
     name: '',
     price: 0,
     description: '',
+    available: true,
   })
 
   useEffect(() => {
