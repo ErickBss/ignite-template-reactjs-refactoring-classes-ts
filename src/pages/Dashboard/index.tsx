@@ -96,7 +96,7 @@ function Dashboard() {
 
       <ModalEditFood
         isOpen={editModal}
-        setIsOpen={toggleEditModal}
+        toggleEditModal={toggleEditModal}
         editingFood={editingFood}
         handleUpdatedFood={handleUpdatedFood}
       />
